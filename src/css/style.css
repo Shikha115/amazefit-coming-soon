@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root {
+    --c_red: #ff6766;
+    --montserrat: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--montserrat);
+    overflow-x: hidden;
+}
+
+.logo img {
+    max-width: 190px;
+}
+
+.logo {
+    position: fixed;
+    top: 5%;
+    left: 4%;
+    background-color: #fff;
+    padding: 15px 10px;
+    z-index: 999;
+}
+
+section.soon .item img {
+    height: 100vh;
+    object-fit: cover;
+    object-position: right;
+}
+
+section.soon {
+    background-image: url("../images/pattern.jpg");
+    background-size: cover;
+}
+
+.soon-inner {
+    background-image: url("../images/Shopping_Blog-Feature-Image-1024x508.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 0 53px;
+    text-align: center;
+}
+
+.soon-inner:before {
+    background-color: var(--c_red);
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.soon-content,
+.social-links,
+.details {
+    position: relative;
+    z-index: 999;
+}
+
+ul {
+    margin: 0 !important;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+.soon-content input.form-control {
+    background-color: transparent;
+    border: 0;
+}
+
+.soon-content .input-group {
+    border-bottom: 1px solid #fff;
+    width: 57%;
+}
+
+.soon-content .input-group-prepend {
+    align-items: center;
+}
+
+.soon-content .input-group-prepend a {
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+input::placeholder {
+    color: #fff !important;
+    opacity: 1;
+}
+
+input:focus,
+input:active {
+    outline: none !important;
+    box-shadow: none !important;
+    border: 0 !important;
+}
+
+input:focus::placeholder,
+input:active::placeholder {
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.social-links {
+    position: absolute;
+    padding: 32px 31px;
+    bottom: 0;
+    right: 0;
+    background-image: url(../images/pattern.jpg);
+    background-size: cover;
+}
+
+.social-links ul li {
+    padding-bottom: 55px;
+}
+
+.social-links ul li a {
+    color: var(--c_red);
+}
+
+.social-links ul li i {
+    font-size: 22px;
+}
+
+.social-links ul li:last-child {
+    padding: 0;
+}
+
+.details {
+    margin: 20px auto 0;
+    border: 1px dashed;
+    padding: 9px;
+    width: max-content;
+}
+
+.details ul {
+    border: 1px solid #fff;
+    padding: 20px;
+    background-color: #fff;
+    color: var(--c_red);
+}
+
+.details li {
+    display: flex;
+    align-items: center;
+    margin-right: 28px;
+}
+
+.details li p {
+    margin: 0;
+    margin-left: 12px;
+    font-weight: 500;
+}
+
+.details li a {
+    color: var(--c_red);
+}
+
+.details ul {
+    display: flex;
+}
+
+.details li:last-child {
+    margin-right: 0;
+}
+
+.soon-content h1 {
+    font-size: 70px;
+    position: relative;
+    /* width: max-content; */
+    margin-bottom: 15px;
+}
+
+
+/* .soon-content h1:before {
+    content: '';
+    position: absolute;
+    width: 30%;
+    bottom: -5%;
+    right: -13%;
+    border-bottom: 4px solid #fff;
+} */
+
+.soon-content p {
+    font-weight: 500;
+}
